@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/simple.css">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+    <style>
+      .logo {
+        position: fixed;
+        left: 1em;
+        bottom: 1em;
+        width: 10%;
+      }
+      .logo img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="img/header_logo.svg" alt="Company Logo">
+    </div>
+    <div class="reveal">
+      <div class="slides">
+
+        <!-- -------------------------------------------------------------- -->
+        <section data-markdown>
+          <textarea data-template>
+            ## ChatGPT 入門
+            <br>
+            業務 DX グループ<br>
+            佐田和也
+          </textarea>
+        </section>
+
+        <!-- -------------------------------------------------------------- -->
+        <section data-markdown>
+          <textarea data-template>
+            ChatGPT の概要
+            - 自然な文章を生成するチャットボット
+            - 特定の分野に特化していない
+          </textarea>
+        </section>
+
+        <!-- -------------------------------------------------------------- -->
+        <section data-markdown>
+          <textarea data-template>
+            ブラウザで開いたところ
+            ![ss_01_top](img/ss_01_top.png)
+          </textarea>
+        </section>
+
+        <!-- -------------------------------------------------------------- -->
+        <section data-markdown>
+          <textarea data-template>
+            入力/出力例
+            ![ss_02_hello](img/ss_02_hello.png)
+          </textarea>
+        </section>
+
+        <!-- -------------------------------------------------------------- -->
+        <section data-markdown>
+          <textarea data-template>
+            入力/出力例
+            ![ss_03_movie](img/ss_03_movie.png)
+          </textarea>
+        </section>
+
+        <!-- -------------------------------------------------------------- -->
+        <section>
+          <section data-auto-animate style="max-height: 100%;">
+            入力/出力例
+            <div style="height: 50vh; position: relative; overflow: hidden; margin-top: .5em;">
+              <div style="width: 100%; position: absolute; top: 0;">
+                <img src="img/ss_04_egg.png" style="width: 100%; margin: 0;">
+              </div>
+            </div>
+          </section>
+
+          <section data-auto-animate style="max-height: 100%;">
+            入力/出力例
+            <div style="height: 50vh; position: relative; overflow: hidden; margin-top: .5em;">
+              <div style="width: 100%; position: absolute; bottom: 0;">
+                <img src="img/ss_04_egg.png" style="width: 100%; margin: 0;">
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- -------------------------------------------------------------- -->
+        <section data-markdown>
+          <textarea data-template>
+            LLM (大規模言語モデル)
+            - 言語モデル ⇒ 単語の出現を予測して文章生成
+            - パラメータ数が巨大
+            - GPT = Generative Pre-trained Transformer
+            - インターネット上の文章を大量に学習済み
+          </textarea>
+        </section>
+
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+      });
+    </script>
+  </body>
+</html>
