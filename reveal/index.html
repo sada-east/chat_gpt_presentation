@@ -46,64 +46,86 @@
         <section data-markdown>
           <textarea data-template>
             ChatGPT の概要
-            - 自然な文章を生成するチャットボット
-            - 特定の分野に特化していない
+            - '22年末～注目されているチャットボット
+            - 人が書いたような自然な文章を生成
+            - 特定の分野に特化していない (汎用的)
           </textarea>
         </section>
 
         <!-- -------------------------------------------------------------- -->
         <section data-markdown>
           <textarea data-template>
-            ブラウザで開いたところ
-            ![ss_01_top](img/ss_01_top.png)
+            これまでの経緯
+            - 2022/11月 OpenAI がプロトタイプを公開
+            - 2ヶ月でアクティブユーザが1億人に到達
+            - 2023/2～3月、有料版や API を公開
+            - ChatGPT 以外にも同様のサービスが出てきた
           </textarea>
         </section>
 
         <!-- -------------------------------------------------------------- -->
         <section data-markdown>
           <textarea data-template>
-            入力/出力例
-            ![ss_02_hello](img/ss_02_hello.png)
-          </textarea>
-        </section>
-
-        <!-- -------------------------------------------------------------- -->
-        <section data-markdown>
-          <textarea data-template>
-            入力/出力例
-            ![ss_03_movie](img/ss_03_movie.png)
+            ChatGPT を使う前に (注意)
+            - 機密や個人情報を入力しない
+            - 出た答えを外向けの文書でそのまま使わない
           </textarea>
         </section>
 
         <!-- -------------------------------------------------------------- -->
         <section>
-          <section data-auto-animate style="max-height: 100%;">
-            入力/出力例
-            <div style="height: 50vh; position: relative; overflow: hidden; margin-top: .5em;">
-              <div style="width: 100%; position: absolute; top: 0;">
-                <img src="img/ss_04_egg.png" style="width: 100%; margin: 0;">
-              </div>
-            </div>
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              ChatGPT のはじめ方
+
+              chat.openai.com でアカウントを作る
+              ![ss_01_signup](img/ss_01_signup.png)
+            </textarea>
           </section>
 
-          <section data-auto-animate style="max-height: 100%;">
-            入力/出力例
-            <div style="height: 50vh; position: relative; overflow: hidden; margin-top: .5em;">
-              <div style="width: 100%; position: absolute; bottom: 0;">
-                <img src="img/ss_04_egg.png" style="width: 100%; margin: 0;">
-              </div>
-            </div>
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              ChatGPT のはじめ方
+
+              ログイン後の画面
+              ![ss_02_top](img/ss_02_top.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              ChatGPT のはじめ方
+
+              何か入力してチャットを始める
+              ![ss_03_input_hello](img/ss_03_input_hello.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              ChatGPT のはじめ方
+
+              返答が出力され、記録されていく
+              ![ss_04_response](img/ss_04_response.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              ChatGPT のはじめ方
+
+              複数のチャットを使い分ける
+              ![ss_05_switch_chat](img/ss_05_switch_chat.png)
+            </textarea>
           </section>
         </section>
 
         <!-- -------------------------------------------------------------- -->
         <section data-markdown>
           <textarea data-template>
-            LLM (大規模言語モデル)
-            - 言語モデル ⇒ 単語の出現を予測して文章生成
-            - パラメータ数が巨大
-            - GPT = Generative Pre-trained Transformer
-            - インターネット上の文章を大量に学習済み
+            デモ
+
+            「熱中症対策について教えて」
           </textarea>
         </section>
 
@@ -122,7 +144,9 @@
         hash: true,
 
         // Learn about plugins: https://revealjs.com/plugins/
-        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+
+        autoAnimateUnmatched: false,
       });
     </script>
   </body>
