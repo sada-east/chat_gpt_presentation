@@ -332,6 +332,312 @@
           </section>
         </section>
 
+        <!-- -------------------------------------------------------------- -->
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+              <p class="headline">デモ (ハルシネーション)</p>
+
+              ハルシネーション (AI の幻覚) とは :
+
+              「AI がもっともらしい嘘を出力してしまうこと」
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (ハルシネーション)</p>
+
+              「ヌートバーについて教えて」
+              ![ss_10-01_nootbar1](img/ss_10-01_nootbar1.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (ハルシネーション)</p>
+
+              [参考] Wikipedia の記事
+              ![nootbaar_wiki](img/nootbaar_wiki.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (ハルシネーション)</p>
+
+              ChatGPT の回答
+              ![ss_10-02_nootbar2](img/ss_10-02_nootbar2.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (ハルシネーション)</p>
+
+              詳細を追及してみる
+              ![ss_10-03_nootbar3](img/ss_10-03_nootbar3.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (ハルシネーション)</p>
+
+              ChatGPT が知識の範囲外だったことを認める
+              ![ss_10-04_nootbar4](img/ss_10-04_nootbar4.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (ハルシネーション)</p>
+
+              ちなみに、"Nootropics" は実際にあります (!)
+              ![nootropics_wiki](img/nootropics_wiki.png)
+            </textarea>
+          </section>
+        </section>
+
+        <!-- -------------------------------------------------------------- -->
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+              <p class="headline">デモ (Excel マクロ)</p>
+
+              「Excel に架空の住所録を生成するマクロを…」
+              ![ss_11-01_vbamacro1](img/ss_11-01_vbamacro1.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (Excel マクロ)</p>
+
+              生成されたマクロ
+              ```visualbasic
+              Sub GenerateAddressList()
+                Dim ws As Worksheet
+                Set ws = ThisWorkbook.Sheets("Sheet1") ' シート名を適宜変更してください
+
+                ' ランダムな名前と住所を生成するための配列
+                Dim names() As String
+                names = Split("Alice,Bob,Charlie,David,Eve,Frank,Grace,Henry,Ivy,Jack", ",")
+
+                Dim addresses() As String
+                addresses = Split("123 Main St,456 Park Ave,789 Elm St,321 Maple Rd,567 Oak Ave,890 Pine St,432 Cedar Rd,876 Birch Ave,901 Willow St,234 Cherry Ave", ",")
+
+                ' ランダムな電話番号を生成するための関数
+                Function GeneratePhoneNumber() As String
+                  Dim phoneNumber As String
+                  phoneNumber = "555-" & Int((9999 - 1000 + 1) * Rnd + 1000) & "-" & Int((9999 - 1000 + 1) * Rnd + 1000)
+                  GeneratePhoneNumber = phoneNumber
+                End Function
+
+                ' 住所録を生成
+                Dim i As Integer
+                For i = 1 To 10
+                  ' ランダムな名前と住所を選択
+                  Dim nameIndex As Integer
+                  Dim addressIndex As Integer
+                  nameIndex = Int((UBound(names) - LBound(names) + 1) * Rnd + LBound(names))
+                  addressIndex = Int((UBound(addresses) - LBound(addresses) + 1) * Rnd + LBound(addresses))
+
+                  ' データをシートに書き込み
+                  ws.Cells(i, 1).Value = names(nameIndex)
+                  ws.Cells(i, 2).Value = addresses(addressIndex)
+                  ws.Cells(i, 3).Value = GeneratePhoneNumber()
+                Next i
+
+                ' 列幅を自動調整
+                ws.Columns.AutoFit
+              End Sub
+              ```
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (Excel マクロ)</p>
+
+              実行結果
+              ![vba_error](img/vba_error.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              ### ChatGPT は、VBA の文法を<br>理解している訳ではない
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (Excel マクロ)</p>
+
+              修正したマクロ
+              ```visualbasic
+              ' ランダムな電話番号を生成するための関数
+              Function GeneratePhoneNumber() As String
+                Dim phoneNumber As String
+                phoneNumber = "555-" & Int((9999 - 1000 + 1) * Rnd + 1000) & "-" & Int((9999 - 1000 + 1) * Rnd + 1000)
+                GeneratePhoneNumber = phoneNumber
+              End Function
+
+              Sub GenerateAddressList()
+                Dim ws As Worksheet
+                Set ws = ThisWorkbook.Sheets("Sheet1") ' シート名を適宜変更してください
+
+                ' ランダムな名前と住所を生成するための配列
+                Dim names() As String
+                names = Split("Alice,Bob,Charlie,David,Eve,Frank,Grace,Henry,Ivy,Jack", ",")
+
+                Dim addresses() As String
+                addresses = Split("123 Main St,456 Park Ave,789 Elm St,321 Maple Rd,567 Oak Ave,890 Pine St,432 Cedar Rd,876 Birch Ave,901 Willow St,234 Cherry Ave", ",")
+
+
+                ' 住所録を生成
+                Dim i As Integer
+                For i = 1 To 10
+                  ' ランダムな名前と住所を選択
+                  Dim nameIndex As Integer
+                  Dim addressIndex As Integer
+                  nameIndex = Int((UBound(names) - LBound(names) + 1) * Rnd + LBound(names))
+                  addressIndex = Int((UBound(addresses) - LBound(addresses) + 1) * Rnd + LBound(addresses))
+
+                  ' データをシートに書き込み
+                  ws.Cells(i, 1).Value = names(nameIndex)
+                  ws.Cells(i, 2).Value = addresses(addressIndex)
+                  ws.Cells(i, 3).Value = GeneratePhoneNumber()
+                Next i
+
+                ' 列幅を自動調整
+                ws.Columns.AutoFit
+              End Sub
+              ```
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (Excel マクロ)</p>
+
+              簡単な修正で動くようになった
+              ![ss_11-02_vbamacro2](img/ss_11-02_vbamacro2.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (Excel マクロ)</p>
+
+              「住所と名前を日本語にしてください」
+              ![ss_11-03_vbamacro3](img/ss_11-03_vbamacro3.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (Excel マクロ)</p>
+
+              実行結果
+              ![ss_11-04_vbamacro4](img/ss_11-04_vbamacro4.png)
+            </textarea>
+          </section>
+        </section>
+
+        <!-- -------------------------------------------------------------- -->
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+              <p class="headline">デモ (三つ並べ)</p>
+
+              「三つ並べゲームをしましょう」
+              ![ss_12-01_tictactoe1](img/ss_12-01_tictactoe1.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (三つ並べ)</p>
+
+              ![ss_12-02_tictactoe2](img/ss_12-02_tictactoe2.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (三つ並べ)</p>
+
+              ![ss_12-03_tictactoe3](img/ss_12-03_tictactoe3.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (三つ並べ)</p>
+
+              ![ss_12-04_tictactoe4](img/ss_12-04_tictactoe4.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (三つ並べ)</p>
+
+              ![ss_12-05_tictactoe5](img/ss_12-05_tictactoe5.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (三つ並べ)</p>
+
+              ![ss_12-06_tictactoe6](img/ss_12-06_tictactoe6.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (三つ並べ)</p>
+
+              ![ss_12-07_tictactoe7](img/ss_12-07_tictactoe7.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (三つ並べ)</p>
+
+              ![ss_12-08_tictactoe8](img/ss_12-08_tictactoe8.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (三つ並べ)</p>
+
+              ![ss_12-09_tictactoe9](img/ss_12-09_tictactoe9.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (三つ並べ)</p>
+
+              ![ss_12-10_tictactoe10](img/ss_12-10_tictactoe10.png)
+            </textarea>
+          </section>
+
+          <section data-markdown>
+            <textarea data-template>
+              <p class="headline">デモ (三つ並べ)</p>
+
+              - マクロの時と同じく、ロジックを理解している訳ではない
+              - ChatGPT は勝とうとする訳でも、勝敗を判定する訳でもない
+            </textarea>
+          </section>
+        </section>
       </div>
     </div>
 
