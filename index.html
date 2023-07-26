@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/simple.css">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+    <style>
+      .logo {
+        position: fixed;
+        top: 1em;
+        right: 1em;
+        width: 8%;
+      }
+      .logo img {
+        width: 100%;
+      }
+      .headline {
+        border-bottom: solid .05em #1e37a6;
+        margin-bottom: .8em !important;
+        padding-bottom: .2em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="img/header_logo.svg" alt="Company Logo">
+    </div>
+    <div class="reveal">
+      <div class="slides">
+
+        <!-- -------------------------------------------------------------- -->
+        <section data-markdown>
+          <textarea data-template>
+            ## ChatGPT 入門
+            <br>
+            業務 DX グループ<br>
+            佐田和也
+          </textarea>
+        </section>
+
+        <!-- -------------------------------------------------------------- -->
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+              <p class="headline">ChatGPT の概要</p>
+
+              - '22年末～注目されているチャットボット
+              - 人が書いたような自然な文章を生成
+              - 特定の分野に特化していない (汎用的)
+            </textarea>
+          </section>
+
+          <section data-markdown>
+            <textarea data-template>
+              <p class="headline">実際の画面</p>
+
+              ![ss_00_web](img/ss_00_web.png)
+            </textarea>
+          </section>
+        </section>
+
+        <!-- -------------------------------------------------------------- -->
+        <section data-markdown>
+          <textarea data-template>
+            <p class="headline">これまでの経緯</p>
+
+            - 2022/11月 OpenAI がプロトタイプを公開
+            - 2ヶ月でアクティブユーザが1億人に到達
+            - 2023/2～3月、有料版や API を公開
+            - ChatGPT 以外にも同様のサービスが出てきた
+          </textarea>
+        </section>
+
+        <!-- -------------------------------------------------------------- -->
+        <section data-markdown>
+          <textarea data-template>
+            <p class="headline">ChatGPT を使う前に (注意)</p>
+
+            - 機密事項や個人情報を入力しない
+            - 出た答えを外向けの文書でそのまま使わない
+          </textarea>
+        </section>
+
+        <!-- -------------------------------------------------------------- -->
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+              <p class="headline">ChatGPT のはじめ方</p>
+
+              chat.openai.com でアカウントを作る
+              ![ss_01_signup](img/ss_01_signup.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">ChatGPT のはじめ方</p>
+
+              ログイン後の画面
+              ![ss_02_top](img/ss_02_top.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">ChatGPT のはじめ方</p>
+
+              何か入力してチャットを始める
+              ![ss_03_input_hello](img/ss_03_input_hello.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">ChatGPT のはじめ方</p>
+
+              返答が出力され、記録されていく
+              ![ss_04_response](img/ss_04_response.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">ChatGPT のはじめ方</p>
+
+              複数のチャットを使い分ける
+              ![ss_05_switch_chat](img/ss_05_switch_chat.png)
+            </textarea>
+          </section>
+        </section>
+
+        <!-- -------------------------------------------------------------- -->
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+              <p class="headline">デモ</p>
+
+              「熱中症対策について教えて」
+              ![ss_06-01_heatsick](img/ss_06-01_heatsick.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ</p>
+
+              「熱中症対策について教えて」
+              ![ss_06-02_heatsick2](img/ss_06-02_heatsick2.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ</p>
+
+              「熱中症対策について教えて」
+              ![ss_06-03_heatsick3](img/ss_06-03_heatsick3.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ</p>
+
+              「ひとことで言うと？」
+              ![ss_06-04_heatsick4](img/ss_06-04_heatsick4.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ</p>
+
+              「ひとことで言うと？」
+              ![ss_06-05_heatsick5](img/ss_06-05_heatsick5.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ</p>
+
+              「それをパリピ風に言ってください」
+              ![ss_06-06_heatsick6](img/ss_06-06_heatsick6.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ</p>
+
+              「それをパリピ風に言ってください」
+              ![ss_06-07_heatsick7](img/ss_06-07_heatsick7.png)
+            </textarea>
+          </section>
+        </section>
+
+        <!-- -------------------------------------------------------------- -->
+        <section>
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (情報の古さ)</p>
+
+              「ChatGPT のスマホアプリはありますか」
+              ![ss_07-01_spapp](img/ss_07-01_spapp.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (情報の古さ)</p>
+
+              「ChatGPT のスマホアプリはありますか」
+              ![ss_07-02_spapp2](img/ss_07-02_spapp2.png)
+            </textarea>
+          </section>
+
+          <section data-markdown>
+            <textarea data-template>
+              <p class="headline">情報の古さ</p>
+
+              - GPT-3.5 は2021年くらいまでの知識
+              - 自社 (OpenAI) の情報であっても
+            </textarea>
+          </section>
+        </section>
+
+        <!-- -------------------------------------------------------------- -->
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+              <p class="headline">スマホアプリ</p>
+
+              - iOS 版はある
+              - Android 版は近日公開
+
+              (2023年7月26日現在)
+            </textarea>
+          </section>
+
+          <section data-markdown>
+            <textarea data-template>
+              同じ AI を使った独自アプリも存在する
+              ![ss_08-01_appstore](img/ss_08-01_appstore.png)
+            </textarea>
+          </section>
+
+          <section data-markdown>
+            <textarea data-template>
+              iOS 版のアプリ
+              ![ss_08-02_iosapp](img/ss_08-02_iosapp.png)
+            </textarea>
+          </section>
+        </section>
+
+        <!-- -------------------------------------------------------------- -->
+        <section data-markdown>
+          <textarea data-template>
+            <p class="headline">ChatGPT Plus (有料版)</p>
+
+            - 月額 $20
+            - 新しいモデル (AI) で ChatGPT を使える
+            - より新しい情報、より正しい回答
+            - Web を検索して答えさせることも可能
+            - プラグインが使える
+          </textarea>
+        </section>
+
+        <!-- -------------------------------------------------------------- -->
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+              <p class="headline">デモ (仕事で使う)</p>
+
+              <span style="font-size: .8em">「DX を推進する部署のキャッチフレーズを考えてください」</span>
+              ![ss_09-01_catchphrase1](img/ss_09-01_catchphrase1.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (仕事で使う)</p>
+
+              <span style="font-size: .8em">「DX を推進する部署のキャッチフレーズを考えてください」</span>
+              ![ss_09-02_catchphrase2](img/ss_09-02_catchphrase2.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (仕事で使う)</p>
+
+              「日本語で、5つの案を出してください」
+              ![ss_09-03_catchphrase3](img/ss_09-03_catchphrase3.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (仕事で使う)</p>
+
+              「日本語で、5つの案を出してください」
+              ![ss_09-04_catchphrase4](img/ss_09-04_catchphrase4.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (仕事で使う)</p>
+
+              「案3で、もっと分かりやすく言い換えた形に…」
+              ![ss_09-05_catchphrase5](img/ss_09-05_catchphrase5.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (仕事で使う)</p>
+
+              「案3で、もっと分かりやすく言い換えた形に…」
+              ![ss_09-06_catchphrase6](img/ss_09-06_catchphrase6.png)
+            </textarea>
+          </section>
+        </section>
+
+        <!-- -------------------------------------------------------------- -->
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+              <p class="headline">デモ (ハルシネーション)</p>
+
+              ハルシネーション (AI の幻覚) とは :
+
+              「AI がもっともらしい嘘を出力してしまうこと」
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (ハルシネーション)</p>
+
+              「ヌートバーについて教えて」
+              ![ss_10-01_nootbar1](img/ss_10-01_nootbar1.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (ハルシネーション)</p>
+
+              [参考] Wikipedia の記事
+              ![nootbaar_wiki](img/nootbaar_wiki.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (ハルシネーション)</p>
+
+              ChatGPT の回答
+              ![ss_10-02_nootbar2](img/ss_10-02_nootbar2.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (ハルシネーション)</p>
+
+              詳細を追及してみる
+              ![ss_10-03_nootbar3](img/ss_10-03_nootbar3.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (ハルシネーション)</p>
+
+              ChatGPT が知識の範囲外だったことを認める
+              ![ss_10-04_nootbar4](img/ss_10-04_nootbar4.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (ハルシネーション)</p>
+
+              ちなみに、"Nootropics" は実際にあります (!)
+              ![nootropics_wiki](img/nootropics_wiki.png)
+            </textarea>
+          </section>
+        </section>
+
+        <!-- -------------------------------------------------------------- -->
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+              <p class="headline">デモ (Excel マクロ)</p>
+
+              「Excel に架空の住所録を生成するマクロを…」
+              ![ss_11-01_vbamacro1](img/ss_11-01_vbamacro1.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (Excel マクロ)</p>
+
+              生成されたマクロ
+              ```visualbasic
+              Sub GenerateAddressList()
+                Dim ws As Worksheet
+                Set ws = ThisWorkbook.Sheets("Sheet1") ' シート名を適宜変更してください
+
+                ' ランダムな名前と住所を生成するための配列
+                Dim names() As String
+                names = Split("Alice,Bob,Charlie,David,Eve,Frank,Grace,Henry,Ivy,Jack", ",")
+
+                Dim addresses() As String
+                addresses = Split("123 Main St,456 Park Ave,789 Elm St,321 Maple Rd,567 Oak Ave,890 Pine St,432 Cedar Rd,876 Birch Ave,901 Willow St,234 Cherry Ave", ",")
+
+                ' ランダムな電話番号を生成するための関数
+                Function GeneratePhoneNumber() As String
+                  Dim phoneNumber As String
+                  phoneNumber = "555-" & Int((9999 - 1000 + 1) * Rnd + 1000) & "-" & Int((9999 - 1000 + 1) * Rnd + 1000)
+                  GeneratePhoneNumber = phoneNumber
+                End Function
+
+                ' 住所録を生成
+                Dim i As Integer
+                For i = 1 To 10
+                  ' ランダムな名前と住所を選択
+                  Dim nameIndex As Integer
+                  Dim addressIndex As Integer
+                  nameIndex = Int((UBound(names) - LBound(names) + 1) * Rnd + LBound(names))
+                  addressIndex = Int((UBound(addresses) - LBound(addresses) + 1) * Rnd + LBound(addresses))
+
+                  ' データをシートに書き込み
+                  ws.Cells(i, 1).Value = names(nameIndex)
+                  ws.Cells(i, 2).Value = addresses(addressIndex)
+                  ws.Cells(i, 3).Value = GeneratePhoneNumber()
+                Next i
+
+                ' 列幅を自動調整
+                ws.Columns.AutoFit
+              End Sub
+              ```
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (Excel マクロ)</p>
+
+              実行結果
+              ![vba_error](img/vba_error.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              ### ChatGPT は、VBA の文法を<br>理解している訳ではない
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (Excel マクロ)</p>
+
+              修正したマクロ
+              ```visualbasic
+              ' ランダムな電話番号を生成するための関数
+              Function GeneratePhoneNumber() As String
+                Dim phoneNumber As String
+                phoneNumber = "555-" & Int((9999 - 1000 + 1) * Rnd + 1000) & "-" & Int((9999 - 1000 + 1) * Rnd + 1000)
+                GeneratePhoneNumber = phoneNumber
+              End Function
+
+              Sub GenerateAddressList()
+                Dim ws As Worksheet
+                Set ws = ThisWorkbook.Sheets("Sheet1") ' シート名を適宜変更してください
+
+                ' ランダムな名前と住所を生成するための配列
+                Dim names() As String
+                names = Split("Alice,Bob,Charlie,David,Eve,Frank,Grace,Henry,Ivy,Jack", ",")
+
+                Dim addresses() As String
+                addresses = Split("123 Main St,456 Park Ave,789 Elm St,321 Maple Rd,567 Oak Ave,890 Pine St,432 Cedar Rd,876 Birch Ave,901 Willow St,234 Cherry Ave", ",")
+
+
+                ' 住所録を生成
+                Dim i As Integer
+                For i = 1 To 10
+                  ' ランダムな名前と住所を選択
+                  Dim nameIndex As Integer
+                  Dim addressIndex As Integer
+                  nameIndex = Int((UBound(names) - LBound(names) + 1) * Rnd + LBound(names))
+                  addressIndex = Int((UBound(addresses) - LBound(addresses) + 1) * Rnd + LBound(addresses))
+
+                  ' データをシートに書き込み
+                  ws.Cells(i, 1).Value = names(nameIndex)
+                  ws.Cells(i, 2).Value = addresses(addressIndex)
+                  ws.Cells(i, 3).Value = GeneratePhoneNumber()
+                Next i
+
+                ' 列幅を自動調整
+                ws.Columns.AutoFit
+              End Sub
+              ```
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (Excel マクロ)</p>
+
+              簡単な修正で動くようになった
+              ![ss_11-02_vbamacro2](img/ss_11-02_vbamacro2.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (Excel マクロ)</p>
+
+              「住所と名前を日本語にしてください」
+              ![ss_11-03_vbamacro3](img/ss_11-03_vbamacro3.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (Excel マクロ)</p>
+
+              実行結果
+              ![ss_11-04_vbamacro4](img/ss_11-04_vbamacro4.png)
+            </textarea>
+          </section>
+        </section>
+
+        <!-- -------------------------------------------------------------- -->
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+              <p class="headline">デモ (三つ並べ)</p>
+
+              「三つ並べゲームをしましょう」
+              ![ss_12-01_tictactoe1](img/ss_12-01_tictactoe1.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (三つ並べ)</p>
+
+              ![ss_12-02_tictactoe2](img/ss_12-02_tictactoe2.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (三つ並べ)</p>
+
+              ![ss_12-03_tictactoe3](img/ss_12-03_tictactoe3.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (三つ並べ)</p>
+
+              ![ss_12-04_tictactoe4](img/ss_12-04_tictactoe4.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (三つ並べ)</p>
+
+              ![ss_12-05_tictactoe5](img/ss_12-05_tictactoe5.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (三つ並べ)</p>
+
+              ![ss_12-06_tictactoe6](img/ss_12-06_tictactoe6.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (三つ並べ)</p>
+
+              ![ss_12-07_tictactoe7](img/ss_12-07_tictactoe7.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (三つ並べ)</p>
+
+              ![ss_12-08_tictactoe8](img/ss_12-08_tictactoe8.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (三つ並べ)</p>
+
+              ![ss_12-09_tictactoe9](img/ss_12-09_tictactoe9.png)
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">デモ (三つ並べ)</p>
+
+              ![ss_12-10_tictactoe10](img/ss_12-10_tictactoe10.png)
+            </textarea>
+          </section>
+
+          <section data-markdown>
+            <textarea data-template>
+              <p class="headline">デモ (三つ並べ)</p>
+
+              - マクロの時と同じく、ロジックを理解している訳ではない
+              - ChatGPT は勝とうとする訳でも、勝敗を判定する訳でもない
+            </textarea>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+
+        autoAnimateUnmatched: false,
+      });
+    </script>
+  </body>
+</html>
