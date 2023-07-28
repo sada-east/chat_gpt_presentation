@@ -28,6 +28,10 @@
         margin-bottom: .8em !important;
         padding-bottom: .2em;
       }
+      .sp_ss {
+        border: solid black 1px;
+        box-shadow: 5px 5px 10px lightgray;
+      }
     </style>
   </head>
   <body>
@@ -206,7 +210,7 @@
 
         <!-- -------------------------------------------------------------- -->
         <section>
-          <section data-markdown data-auto-animate>
+          <section data-markdown>
             <textarea data-template>
               <p class="headline">デモ (情報の古さ)</p>
 
@@ -224,7 +228,7 @@
             </textarea>
           </section>
 
-          <section data-markdown>
+          <section data-markdown data-auto-animate>
             <textarea data-template>
               <p class="headline">情報の古さ</p>
 
@@ -240,25 +244,30 @@
             <textarea data-template>
               <p class="headline">スマホアプリ</p>
 
-              - iOS 版はある
-              - Android 版は近日公開
-
-              (2023年7月26日現在)
+              - iOS 版と Android 版がある
+              - ストアに類似アプリが多いので注意
+              - Web 版も普通に使えるのでお好みで
             </textarea>
           </section>
 
-          <section data-markdown>
-            <textarea data-template>
-              同じ AI を使った独自アプリも存在する
-              ![ss_08-01_appstore](img/ss_08-01_appstore.png)
-            </textarea>
+          <section data-auto-animate>
+            <p class="headline">スマホアプリ</p>
+            <p>iOS 版</p>
+            <div style="height: 12em;">
+              <img class="sp_ss" src="img/iosapp1.png" style="height: 100%; margin: 0 .2em;"/>
+              <img class="sp_ss" src="img/iosapp2.png" style="height: 100%; margin: 0 .2em;"/>
+              <img class="sp_ss" src="img/iosapp3.png" style="height: 100%; margin: 0 .2em;"/>
+            </div>
           </section>
 
-          <section data-markdown>
-            <textarea data-template>
-              iOS 版のアプリ
-              ![ss_08-02_iosapp](img/ss_08-02_iosapp.png)
-            </textarea>
+          <section data-auto-animate>
+            <p class="headline">スマホアプリ</p>
+            <p>Android 版</p>
+            <div style="height: 12em;">
+              <img class="sp_ss" src="img/androidapp1.png" style="height: 100%; margin: 0 .2em;"/>
+              <img class="sp_ss" src="img/androidapp2.png" style="height: 100%; margin: 0 .2em;"/>
+              <img class="sp_ss" src="img/androidapp3.png" style="height: 100%; margin: 0 .2em;"/>
+            </div>
           </section>
         </section>
 
@@ -763,8 +772,8 @@
               1. 本ガイドラインが対象とする生成 AI
               1. 生成 AI の利用が禁止される用途
               1. 本ガイドラインの構成
-              1. データ入力に際して注意すべき事項★
-              1. 生成物を利用するに際して注意すべき事項★
+              1. **データ入力に際して注意すべき事項**
+              1. **生成物を利用するに際して注意すべき事項**
             </textarea>
           </section>
 
@@ -797,14 +806,77 @@
         <section>
           <section data-markdown>
             <textarea data-template>
+              <p class="headline">画像生成 AI</p>
+
+              ChatGPT より早く、2022年夏ごろから<br>「画像生成 AI」が話題になっていた
+
+              - Stable Diffusion
+              - DALL-E 2
+              - Midjourney
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">画像生成 AI</p>
+
+              Stable Diffusion<br>
+              ![stable_diffusion.png](img/stable_diffusion.png)<br>
+              "a photograph of an astronaut riding a horse"
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">画像生成 AI</p>
+
+              Stable Diffusion
+              - オープンソースの画像生成モデル
+              - Hugging Face のデモ
+              <span style="font-size: .8em">https://huggingface.co/spaces/stabilityai/stable-diffusion</span>
+              - Dream Studio (有料の Web サービス)
+              https://beta.dreamstudio.ai
+              - Easy Diffusion (フリーのインストーラ)
+              https://github.com/easydiffusion/easydiffusion
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">画像生成 AI</p>
+
+              DALL-E 2<br>
+              ![dall-e2.jpg](img/dall-e2.jpg)<br>
+              "Teddy bears working on new AI research underwater with 1990s technology"
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">画像生成 AI</p>
+
+              DALL-E 2
+              - ChatGPT と同じ OpenAI のモデル
+              https://labs.openai.com/
+              - 無料で使える回数が決まっている
+              - 無料分は毎月 (少し) 追加される
+              - ChatGPT と同じく API を使える
+            </textarea>
+          </section>
+        </section>
+
+        <!-- -------------------------------------------------------------- -->
+        <section>
+          <section data-markdown>
+            <textarea data-template>
               <p class="headline">最近の話題</p>
 
               ChatGPT 関連の話題
               - 最近は新機能や GPT-4 の性能について等、有料版の話題が多い
               - ChatGPT 以外の LLM (大規模言語モデル)
-                - Bard, Llama2, AppleGPT
+                - [Bard](https://bard.google.com), [Llama2](https://ai.meta.com/llama/), AppleGPT
               - GPT をツールの一部として統合するようなツール
-                - LangChain, AutoGPT, BabyAGI
+                - [LangChain](https://www.langchain.com), [AutoGPT](https://github.com/Significant-Gravitas/Auto-GPT), [BabyAGI](https://github.com/Significant-Gravitas/Auto-GPT)
             </textarea>
           </section>
 
@@ -812,10 +884,10 @@
             <textarea data-template>
               <p class="headline">最近の話題</p>
 
-              生成 AI 関連の話題
-              - 米俳優組合がストライキ (生成 AI の使用をめぐって)
-              - AI 開発の一時停止を求めていたイーロン・マスクが AI の会社を設立
-              - サム・アルトマン (OpenAI の CEO) がワールドコインを発表
+              その他の生成 AI 関連の話題
+              - [米俳優組合がストライキ (生成 AI の使用をめぐって)](https://www.itmedia.co.jp/news/articles/2307/26/news084.html)
+              - [AI 開発の一時停止を求めていたイーロン・マスクが AI の会社を設立](https://www.cnn.co.jp/tech/35206500.html)
+              - [サム・アルトマン (OpenAI の CEO) がワールドコインを発表](https://forbesjapan.com/articles/detail/64821)
             </textarea>
           </section>
         </section>
@@ -838,6 +910,7 @@
 
         // autoAnimateUnmatched: false,
         autoAnimateDuration: 0.4,
+        transitionSpeed: 'fast',
       });
     </script>
   </body>
