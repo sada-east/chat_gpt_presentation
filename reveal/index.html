@@ -6,6 +6,8 @@
 
     <title>reveal.js</title>
 
+    <base target="_blank">
+
     <link rel="stylesheet" href="dist/reset.css">
     <link rel="stylesheet" href="dist/reveal.css">
     <link rel="stylesheet" href="dist/theme/simple.css">
@@ -31,6 +33,9 @@
       .sp_ss {
         border: solid black 1px;
         box-shadow: 5px 5px 10px lightgray;
+      }
+      li {
+        margin-bottom: .3em;
       }
     </style>
   </head>
@@ -80,25 +85,24 @@
             </textarea>
           </section>
 
-          <section data-markdown>
+          <!-- <section data-markdown>
             <textarea data-template>
               <p class="headline">実際の画面</p>
 
               ![ss_00_web](img/ss_00_web.png)
             </textarea>
+          </section> -->
+
+          <section data-markdown>
+            <textarea data-template>
+              <p class="headline">経緯</p>
+
+              - 2022/11月 OpenAI がプロトタイプを公開
+              - 2ヶ月でアクティブユーザが1億人に到達
+              - 2023/2～3月、有料版や API を公開
+              - ChatGPT 以外にも同様のサービスが出てきた
+            </textarea>
           </section>
-        </section>
-
-        <!-- -------------------------------------------------------------- -->
-        <section data-markdown>
-          <textarea data-template>
-            <p class="headline">これまでの経緯</p>
-
-            - 2022/11月 OpenAI がプロトタイプを公開
-            - 2ヶ月でアクティブユーザが1億人に到達
-            - 2023/2～3月、有料版や API を公開
-            - ChatGPT 以外にも同様のサービスが出てきた
-          </textarea>
         </section>
 
         <!-- -------------------------------------------------------------- -->
@@ -297,7 +301,8 @@
             - 新しいモデル (AI) で ChatGPT を使える
             - より新しい情報、より正しい回答
             - Web を検索して答えさせることも可能
-            - プラグインが使える
+            - プラグインが使える<br>
+              (参考: [解説記事](https://app-liv.jp/ai/articles/5/))
           </textarea>
         </section>
 
@@ -501,7 +506,7 @@
             <textarea data-template>
               <p class="headline">デモ (コーディング)</p>
 
-              修正したマクロ
+              簡単な修正をしたマクロ
               ```visualbasic
               ' ランダムな電話番号を生成するための関数
               Function GeneratePhoneNumber() As String
@@ -659,7 +664,7 @@
             <textarea data-template>
               <p class="headline">デモ (三つ並べ)</p>
 
-              - ChatGPT は勝とうとしたり、勝敗を判定したりしない
+              - ChatGPT は勝とうとしたり、勝敗を正しく判定したりしない
               - マクロの時と同じく、ロジックを理解している訳ではない
             </textarea>
           </section>
@@ -760,9 +765,10 @@
             <textarea data-template>
               <p class="headline">デモ (プロンプト・エンジニアリング)</p>
 
-              - 「JSON 形式」と言っただけで、"speaker", "text" などのキーを決めて出力している
+              - 「JSON 形式」と言っただけで、"speaker", "text" などの項目名を決めて出力している
               - 一般的な作法を類推するのは得意なので、それを利用すると良い
-              - ネット上で様々なテクニックが提案されている
+              - ネット上で様々なテクニックが提案されている<br>
+                (参考: [プロンプトのコツ](https://dekiru.net/article/24267/))
             </textarea>
           </section>
         </section>
@@ -823,6 +829,63 @@
         <section>
           <section data-markdown>
             <textarea data-template>
+              <p class="headline">その他のチャット AI</p>
+
+              ChatGPT が広まった後に<br>生成系のチャット AI が急増した
+
+              - Google SGE
+              - Bing チャット
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">その他のチャット AI</p>
+
+              Google SGE<br>
+              <img src="img/google_sge.png" width="74%">
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">その他のチャット AI</p>
+
+              Google SGE<br>
+              - Google の検索画面で利用可能
+              - 検索結果を統合・要約してくれる
+              - 試験運用中
+              - 要約が表示されないこともある
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">その他のチャット AI</p>
+
+              Bing チャット<br>
+              <img src="img/bingchat_sidebar.png" width="80%">
+            </textarea>
+          </section>
+
+          <section data-markdown data-auto-animate>
+            <textarea data-template>
+              <p class="headline">その他のチャット AI</p>
+
+              Bing チャット<br>
+              - GPT-4 を使っているが無料
+              - 検索結果を統合・要約してくれる
+              - 画像生成が可能 (個人アカウントのみ)
+              - 文章生成ツールも備わっている
+              - チャットだけなら [bing.com](https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx) でも利用可能
+            </textarea>
+          </section>
+        </section>
+
+        <!-- -------------------------------------------------------------- -->
+        <section>
+          <section data-markdown>
+            <textarea data-template>
               <p class="headline">画像生成 AI</p>
 
               ChatGPT より早く、2022年夏ごろから<br>「画像生成 AI」が話題になっていた
@@ -849,7 +912,7 @@
 
               Stable Diffusion
               - オープンソースの画像生成モデル
-              - Hugging Face のデモ
+              - Hugging Face のデモ (停止中)
               <span style="font-size: .8em">https://huggingface.co/spaces/stabilityai/stable-diffusion</span>
               - Dream Studio (有料の Web サービス)
               https://beta.dreamstudio.ai
@@ -886,25 +949,29 @@
         <section>
           <section data-markdown>
             <textarea data-template>
-              <p class="headline">最近の話題</p>
+              <p class="headline">その他の話題</p>
 
-              ChatGPT 関連の話題
-              - 最近は新機能や GPT-4 の性能について等、有料版の話題が多い
-              - ChatGPT 以外の LLM (大規模言語モデル)
-                - [Bard](https://bard.google.com), [Llama2](https://ai.meta.com/llama/), AppleGPT
-              - GPT をツールの一部として統合するようなツール
-                - [LangChain](https://www.langchain.com), [AutoGPT](https://github.com/Significant-Gravitas/Auto-GPT), [BabyAGI](https://github.com/Significant-Gravitas/Auto-GPT)
+              ChatGPT 以外の LLM (大規模言語モデル)
+              | | |
+              |-|-|
+              |[Bard](https://bard.google.com) (Google)|[大きなアップデート](https://news.yahoo.co.jp/articles/7d3b2b3ce34a6aafc4f9dd94b8838b60f8ee10de) があった|
+              |[Llama2](https://ai.meta.com/llama/) (Meta)|(ほぼ) オープンソース|
+              |[Weblab-10B](https://huggingface.co/matsuo-lab) (東大)|非商用で無料公開|
+              |Gemini (Google)|[2023年後半リリース予定](https://www.suzukikenichi.com/blog/google-is-developing-a-new-ai-system-called-gemini/)|
+              |AppleGPT (Apple)|開発中との噂|
             </textarea>
           </section>
 
           <section data-markdown data-auto-animate>
             <textarea data-template>
-              <p class="headline">最近の話題</p>
+              <p class="headline">その他の話題</p>
 
               その他の生成 AI 関連の話題
+              - [東京都「文章生成AI利活用ガイドライン」公開](https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/2023/08/23/14.html)
+              - [デジタル庁「ChatGPTを業務に組み込むための手引き」公開](https://ascii.jp/elem/000/004/152/4152156/)
               - [米俳優組合がストライキ (生成 AI の使用をめぐって)](https://www.itmedia.co.jp/news/articles/2307/26/news084.html)
-              - [AI 開発の一時停止を求めていたイーロン・マスクが AI の会社を設立](https://www.cnn.co.jp/tech/35206500.html)
-              - [サム・アルトマン (OpenAI の CEO) がワールドコインを発表](https://forbesjapan.com/articles/detail/64821)
+              - [イーロン・マスクが AI の会社 (xAI) を設立](https://www.cnn.co.jp/tech/35206500.html)
+              - [サム・アルトマンがワールドコインを発表](https://forbesjapan.com/articles/detail/64821)
             </textarea>
           </section>
         </section>
